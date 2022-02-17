@@ -17,11 +17,11 @@ public class cowsandbulls {
 
     // var
     // int CompterGuess = 2345;
-    int[] ar={(int) (Math.random() * (2 - 1 + 1) + 1),(int) (Math.random() * (4 - 3 + 1) + 3),
-            (int) (Math.random() * (7 - 5 + 1) + 5),(int) (Math.random() * (9 - 8 + 1) + 8)};
-    
-    int dit = (int) (Math.random() * (3 - 0 + 1));
-    int CompterGuess = dit*1000+((dit+1)%4)*100+((dit+1)%4)*10+((dit+1)%4);
+    int ran1=(int) (Math.random() * (2 - 1 + 1) + 1) ;
+    int ran2=(int) (Math.random() * (4 - 3 + 1) + 3) ;
+    int ran3=(int) (Math.random() * (7 - 5 + 1) + 5) ;
+    int ran4=(int) (Math.random() * (9 - 8 + 1) + 8) ;
+    int CompterGuess = ran1*1000+ran2*100+ran3*10+ran4;
     
 
     cowsandbulls() {
