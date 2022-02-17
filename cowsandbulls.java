@@ -22,11 +22,12 @@ public class cowsandbulls {
     int ran3=(int) (Math.random() * (7 - 5 + 1) + 5) ;
     int ran4=(int) (Math.random() * (9 - 8 + 1) + 8) ;
     int CompterGuess = ran1*1000+ran2*100+ran3*10+ran4;
-    
+    int height=30;
 
     cowsandbulls() {
         frame = new JFrame("Cows and Bulls");
         System.out.println(CompterGuess);
+
         b1 = new JButton(new AbstractAction("Check") {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -64,7 +65,10 @@ public class cowsandbulls {
                             }
                         }
                         // Dispalytxt.setText("Cows : " + Cows + " Bulls : "+Bulls);
-                        Dispalytxt.setText(Cows +"C"+ Bulls+"B");
+                        String textfull = Dispalytxt.getText() +"\n"+Cows +"C"+ Bulls+"B"+"\t "+gnum;
+                        Dispalytxt.setText(textfull);
+                        Dispalytxt.setBounds(23, 50, 250, height);
+                        height += 13;
                         
                     }else {
                         Dispalytxt.setText("Number should be greater than 999 \n \tand only 4 digit");
@@ -73,13 +77,13 @@ public class cowsandbulls {
             }
         });
 
-        b1.setBounds(100, 100, 100, 30);
+        b1.setBounds(175, 10, 100, 30);
         frame.add(b1);
 
-        guessField.setBounds(100, 10, 100, 30);
+        guessField.setBounds(20, 10, 100, 30);
         frame.add(guessField);
 
-        Dispalytxt.setBounds(23, 50, 250, 40);
+        Dispalytxt.setBounds(20, 50, 250, 40);
         Dispalytxt.setEditable(false);
         frame.add(Dispalytxt);
 
