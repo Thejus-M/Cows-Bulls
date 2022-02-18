@@ -67,8 +67,7 @@ public class cowsandbulls {
                             }
                         }
                         // Dispalytxt.setText("Cows : " + Cows + " Bulls : "+Bulls);
-                        String Value=Dispalytxt.getName();
-                        String textfull = Value +"\n"+q+")\t"+Cows +"C"+ Bulls+"B"+" ------------\t"+gnum;
+                        String textfull = Dispalytxt.getText() +"\n"+q+")\t"+Cows +"C"+ Bulls+"B"+" ------------\t"+gnum;
                         Dispalytxt.setText(textfull);
                         Dispalytxt.setBounds(23, 50, 250, height);
                         height += 15;
@@ -88,8 +87,7 @@ public class cowsandbulls {
         
         Dispalytxt.setBounds(20, 50, 250, 40);
         Dispalytxt.setEditable(false);
-        String textfull;
-        textfull ="Slno."+"\t C&B"+"\t Guessed Numbers";
+        String textfull="Slno."+"\tC&B"+"\tGuess No.";
         Dispalytxt.setText(textfull);
         frame.add(Dispalytxt);
 
