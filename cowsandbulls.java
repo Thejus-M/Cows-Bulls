@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -16,6 +17,9 @@ public class cowsandbulls {
 
     static JButton b1;
 
+
+    
+    
     // var
     // int CompterGuess = 2345;
     int ran1=(int) (Math.random() * (2 - 1 + 1) + 1) ;
@@ -73,7 +77,8 @@ public class cowsandbulls {
                         height += 15;
                         
                     }else {
-                        Dispalytxt.setText("Number should be greater than 999 \n \tand only 4 digit");
+                        JOptionPane.showMessageDialog(frame, "Number should be greater than 999 \n \tand only 4 digit",
+                                   "ERROR", JOptionPane.ERROR_MESSAGE);
                 }
                 
             }
